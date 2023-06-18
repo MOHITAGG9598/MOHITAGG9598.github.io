@@ -55,9 +55,5 @@ def identify_most_technically_complex(repositories):
 
     most_complex_repository = response.choices[0].text.strip()
     return most_complex_repository
-github_username = input("username")
-repositories = fetch_repositories(github_username)
-most_complex_repository = identify_most_technically_complex(repositories)
-print("Most Technically Complex Repository:", most_complex_repository)
 if __name__ == '__main__':
     app.run()
